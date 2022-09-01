@@ -21,5 +21,6 @@ public class CustomerController {
     public void registerCustomer(@RequestBody CustomerModel customerModel)
         {
             log.info("new Customer registration {}" , customerModel);
+            customerService.register(customerModel);
         }
 }
